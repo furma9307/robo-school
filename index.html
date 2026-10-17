@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RoboSchool — Школа робототехники и программирования</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Хедер / Навигация -->
+  <header class="header">
+    <div class="container header__container">
+      <a href="#" class="logo">Robo<span>School</span></a>
+      
+      <nav class="nav" id="nav">
+  <ul class="nav__list">
+    <li><a href="index.html" class="nav__link">Главная</a></li>
+    <li><a href="courses.html" class="nav__link">Курсы</a></li>
+    <li><a href="about.html" class="nav__link">О нас</a></li>
+    <li><a href="contacts.html" class="nav__link">Контакты</a></li>
+  </ul>
+</nav>
+
+      <button class="btn btn--primary header__btn" id="openModalBtn">Записаться</button>
+      
+      <!-- Кнопка бургер-меню для мобилок -->
+      <button class="burger" id="burgerBtn" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Главный экран (Hero) -->
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <h1 class="hero__title">Погрузись в мир <span>робототехники</span> и кода</h1>
+          <p class="hero__subtitle">Обучаем детей и подростков созданию роботов, программированию на Python и C++ с нуля.</p>
+          <div class="hero__actions">
+            <a href="courses.html" class="btn btn--primary">Выбрать курс</a>
+            <a href="about.html" class="btn btn--outline">Узнать подробнее</a>
+          </div>
+        </div>
+        <div class="hero__image">
+          <div class="hero__card-mock">🤖 [Интерактивная иллюстрация / Робот]</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок преимуществ -->
+    <section class="benefits" id="benefits">
+      <div class="container">
+        <h2 class="section-title">Почему выбирают нас</h2>
+        <div class="benefits__grid">
+          <div class="benefit-card">
+            <div class="benefit-card__icon">🛠️</div>
+            <h3>80% практики</h3>
+            <p>Каждое занятие — это сборка реального робота или написание рабочего кода.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-card__icon">👨‍🏫</div>
+            <h3>Опытные наставники</h3>
+            <p>Преподаватели — практикующие инженеры и разработчики.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-card__icon">🏆</div>
+            <h3>Участие в хакатонах</h3>
+            <p>Готовим учеников к городским и международным соревнованиям.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Модальное окно записи -->
+  <div class="modal" id="modal">
+    <div class="modal__content">
+      <button class="modal__close" id="closeModalBtn">&times;</button>
+      <h3>Записаться на пробный урок</h3>
+      <form class="form" id="leadForm">
+        <input type="text" class="form__input" placeholder="Ваше имя" required>
+        <input type="tel" class="form__input" placeholder="Телефон" required>
+        <button type="submit" class="btn btn--primary form__btn">Отправить заявку</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
