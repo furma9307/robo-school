@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Все курсы — RoboSchool</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Хедер -->
+  <header class="header">
+    <div class="container header__container">
+      <a href="index.html" class="logo">Robo<span>School</span></a>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Главная</a></li>
+          <li><a href="courses.html" class="nav__link nav__link--active">Курсы</a></li>
+          <li><a href="about.html" class="nav__link">О нас</a></li>
+          <li><a href="contacts.html" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+      <button class="btn btn--primary header__btn" id="openModalBtn">Записаться</button>
+      <button class="burger" id="burgerBtn">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title">Наши учебные программы</h1>
+        <p class="page-subtitle">Выберите курс, подпадающий под возраст и уровень подготовки вашего ребенка</p>
+      </div>
+    </section>
+
+    <!-- Сетка курсов -->
+    <section class="courses-section">
+      <div class="container">
+        <div class="courses__grid">
+          
+          <!-- Карточка 1 -->
+          <article class="course-card">
+            <div class="course-card__badge">7–10 лет</div>
+            <div class="course-card__image">🤖 LEGO Mindstorms</div>
+            <div class="course-card__body">
+              <h3 class="course-card__title">Основы робототехники</h3>
+              <p class="course-card__desc">Сборка первых механизмов, изученение датчиков и базовая логика программирования в игровой форме.</p>
+              <div class="course-card__footer">
+                <span class="course-card__price">4 500 ₽/мес</span>
+                <button class="btn btn--outline open-course-modal">Подробнее</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Карточка 2 -->
+          <article class="course-card">
+            <div class="course-card__badge">11–14 лет</div>
+            <div class="course-card__image">⚡ Arduino & C++</div>
+            <div class="course-card__body">
+              <h3 class="course-card__title">Схемотехника и C++</h3>
+              <p class="course-card__desc">Работа с реальными платами Arduino, пайка, создание автономных роботов и умных устройств.</p>
+              <div class="course-card__footer">
+                <span class="course-card__price">5 500 ₽/мес</span>
+                <button class="btn btn--outline open-course-modal">Подробнее</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Карточка 3 -->
+          <article class="course-card">
+            <div class="course-card__badge">12–17 лет</div>
+            <div class="course-card__image">🐍 Python & AI</div>
+            <div class="course-card__body">
+              <h3 class="course-card__title">Python-разработка</h3>
+              <p class="course-card__desc">Изучение синтаксиса Python, работа с алгоритмами, написание ботов и базовое машинное обучение.</p>
+              <div class="course-card__footer">
+                <span class="course-card__price">6 000 ₽/мес</span>
+                <button class="btn btn--outline open-course-modal">Подробнее</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Модальное окно -->
+  <div class="modal" id="modal">
+    <div class="modal__content">
+      <button class="modal__close" id="closeModalBtn">&times;</button>
+      <h3>Записаться на курс</h3>
+      <form class="form" id="leadForm">
+        <input type="text" class="form__input" placeholder="Ваше имя" required>
+        <input type="tel" class="form__input" placeholder="Телефон" required>
+        <button type="submit" class="btn btn--primary form__btn">Отправить заявку</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — RoboSchool</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Хедер -->
+  <header class="header">
+    <div class="container header__container">
+      <a href="index.html" class="logo">Robo<span>School</span></a>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Главная</a></li>
+          <li><a href="courses.html" class="nav__link">Курсы</a></li>
+          <li><a href="about.html" class="nav__link">О нас</a></li>
+          <li><a href="contacts.html" class="nav__link nav__link--active">Контакты</a></li>
+        </ul>
+      </nav>
+      <button class="btn btn--primary header__btn" id="openModalBtn">Записаться</button>
+      <button class="burger" id="burgerBtn">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title">Контакты</h1>
+        <p class="page-subtitle">Свяжитесь с нами удобным способом или приходите в гости</p>
+      </div>
+    </section>
+
+    <!-- Секция контактов -->
+    <section class="contacts-section">
+      <div class="container contacts__container">
+        
+        <div class="contacts__info">
+          <h3>Наши координаты</h3>
+          <p><strong>Адрес:</strong> г. Москва, ул. Технологическая, д. 15, офис 304</p>
+          <p><strong>Телефон:</strong> +7 (999) 123-45-67</p>
+          <p><strong>Email:</strong> info@roboschool.ru</p>
+          <p><strong>Режим работы:</strong> Пн–Сб с 10:00 до 20:00</p>
+        </div>
+
+        <div class="contacts__form-card">
+          <h3>Напишите нам</h3>
+          <form class="form" id="contactPageForm">
+            <input type="text" class="form__input" placeholder="Ваше имя" required>
+            <input type="email" class="form__input" placeholder="Ваш Email" required>
+            <textarea class="form__input" placeholder="Ваше сообщение" rows="4" required style="resize: vertical;"></textarea>
+            <button type="submit" class="btn btn--primary form__btn">Отправить сообщение</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Модальное окно -->
+  <div class="modal" id="modal">
+    <div class="modal__content">
+      <button class="modal__close" id="closeModalBtn">&times;</button>
+      <h3>Записаться на занятие</h3>
+      <form class="form" id="leadForm">
+        <input type="text" class="form__input" placeholder="Ваше имя" required>
+        <input type="tel" class="form__input" placeholder="Телефон" required>
+        <button type="submit" class="btn btn--primary form__btn">Отправить заявку</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
